@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*, *::before, *:after{
+  box-sizing: border-box;
+}
+
+a:hover, a:focus, button:hover, button:focus{
+  outline: 3px dotted #45a9f8;
+}
+
+a:active, button:active{
+  outline-style: dashed;
+}
+
+
+.app-header{
+  min-height: 60px;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  box-shadow: #000 0px 0px 20px 0px;
+}
+
+.app-container{
+  max-width: 720px;
+  width: 100%;
+  padding: 20px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #c1c1c1;
+  border-radius: 25px;
+  min-height: 400px;
+}
+
+.app--header{
+  border-bottom: 1px solid #c1c1c1;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+.landing--list{
+  display: grid;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(2, minmax(150px, 180px));
+  justify-content: center;
+  grid-gap: 20px;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.landing--list li a{
+  border: 1px solid #c1c1c1;
+  padding: 20px;
+  text-align: center;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  vertical-align: middle;
+  flex-direction: column;
+  text-decoration: none;
+  color: #000;
+
+}
+
+.landing--list li a:hover,
+.landing--list li a:focus{
+  background-color: #45a9f8;
+}
+
+.landing--list .item--image{
+  max-width: 70px;
+  width: 100%
+}
+
+.landing--list li .item--title{
+  margin-top: 20px;
+}
+
+.form--part{
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.form--part input, .form--part select{
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: 1px solid #c1c1c1;
+  background: #FFF;
+}
+
+.form .form--submit{
+  max-width: 250px;
+  margin: 20px auto 0;
+  width: 100%;
+  display: block;
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: 1px solid #c1c1c1;
+  
+}
+
+.bill--item{
+  padding: 15px 10px;
+  border-bottom: 1px solid #c1c1c1;
+  display: grid;
+  grid-template-columns: 1fr 100px 100px;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+
+}
+
+.bill--item .actions{
+  text-align: center;
+}
+
+.bill--list > .bill--item:first-of-type{
+  padding-top: 0;
+}
+
+.bill--item .bill--meta{
+  display: flex;
+  flex-direction: column;
+}
+
+.bill-value{
+  text-align: right;
+  font-weight: 700;
+}
